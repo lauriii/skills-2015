@@ -1,0 +1,273 @@
+body {
+    font-family: Calibri;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #003266;
+}
+
+.logo {
+    width: 150px;
+    margin: 50px auto 0;
+}
+
+.visually-hidden {
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+.main-nav {
+    text-align: center;
+    margin-bottom: 25px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 40px;
+     background: #353535;
+    z-index: 10;
+ }
+.main-nav ul li {
+    float: left;
+}
+.main-nav ul, .main-nav li {
+    list-style: none;
+    margin: 0;
+}
+.main-nav ul {
+    padding: 0;
+}
+.main-nav nav {
+    margin: 0 auto;
+    display: inline-block;
+}
+.main-nav a {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    color: #FFF;
+    text-decoration: none;
+}
+.main-nav a:hover, .main-nav a:active {
+    text-decoration: underline;
+}
+
+#rental-dialog {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s;
+}
+#rental-dialog.show {
+    display: block;
+    height: 400px;
+}
+
+section {
+    text-align: center;
+    padding: 0 10px;
+}
+.info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.featured article > a {
+    float: right;
+}
+.featured article > a img {
+    width: 140px;
+    margin-top: 55px;
+    margin-left: 5px;
+}
+.movie .movie-info- > a {
+    float: right;
+    width: 140px;
+    margin-left: 7px;
+}
+.rental {
+    text-align: left;
+}
+.button {
+    display: inline-block;
+    border: 3px solid #003266;
+    text-decoration: none;
+    padding: 5px 8px;
+    transition: 0.5s;
+}
+.button:hover {
+    background: #003266;
+    color: #FFFFFF;
+}
+.button:active {
+    background: #00162c;
+    border: 3px solid #00162c;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/** Movies list */
+.related-movies {
+    margin: 0 10px;
+}
+.movies-list, .related-movies ul {
+    list-style: none;
+    padding: 0;
+}
+.movies-list li, .related-movies li {
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.movies-list li:nth-child(1),
+.movies-list li:nth-child(3),
+.related-movies li:nth-child(1),
+.related-movies li:nth-child(3) {
+    margin-right: 5%;
+}
+.movies-list figure, .related-movies figure {
+    margin: 0;
+}
+.all-movies .movies-list li {
+    width: 100%;
+}
+.all-movies .movies-list li article img{
+    float: right;
+    width: 120px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+@media screen and (min-width: 480px) {
+    .movies-list li:nth-child(1),
+    .movies-list li:nth-child(3) {
+        margin-right: 0;
+    }
+    .movies-list li {
+        width: 20%;
+        margin-right: 5% !important;
+    }
+    .movies-list li:last-child {
+        margin-right: 0 !important;;
+    }
+    .all-movies .movies-list li article {
+        width: 18%;
+        margin: 0 1% 20px 1%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+/** Contact page tabs */
+.tab-content {
+    transition: opacity 0.8s;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.tab-content input[type="submit"] {
+    margin-top: 20px;
+}
+.tab-panels {
+    position: relative;
+    height: 450px;
+}
+.tab-content.active {
+    opacity: 1;
+    z-index: 5;
+}
+
+/** Store locator */
+.locations ul {
+    list-style: none;
+    padding: 0;
+}
+
+/** Footer */
+.footer-help {
+    text-align: center;
+}
+
+.container .ui {
+    float: right;
+    font-size: 1.3em;
+}
+.container .ui a {
+    text-decoration: none;
+    transition: 1s;
+}
+.container .ui a:hover {
+    font-size: 1.4em;'
+}
+.container .ui a:active {
+    font-size: 1.7em;
+}
+
+.success.hidden, .alert.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+    left: -5000px;
+}
+.success, .alert {
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+    transition: 0.5s;
+    bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    color: #FFF;
+}
+.success:not(.hidden), .alert:not(.hidden) {
+    z-index: 15;
+}
+.success {
+    background: #1bb245;
+}
+.alert {
+    background: #b21f2d;
+}
+
+.login input[type="submit"] {
+    margin-top: 15px;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.footer-nav, .back-to-top, .footer-help, .copyright {
+    text-align: center;
+    margin: 0 10px 10px 10px;
+}
+.footer-nav ul {
+    padding: 0;
+    margin-bottom: 30px;
+    list-style: none;
+}
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.photos-list {
+    list-style: none;
+    padding: 0;
+}
+
+.back-to-top {
+    margin: 40px;
+    font-size: 1.4em;
+}

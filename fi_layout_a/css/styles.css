@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-Regular.ttf');
+}
+@font-face {
+    font-family: 'Volkorn Bold';
+    src: url('../fonts/Vollkorn-Bold.ttf');
+}
+
+/** General stylings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#faefca, #fae28f);
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script';
+}
+img {
+    max-width: 100%;
+}
+
+blockquote {
+    border-left: 2px solid #ffd703;
+    font-size: 2em;
+    margin-left: 0;
+    padding: 30px 20px;
+}
+
+/** Grid classes */
+.clear {
+    clear: both;
+    width: 100%;
+}
+.container {
+    background: #FFF;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
+}
+.container--main {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+footer .container {
+    background: none;
+    box-shadow: none;
+}
+.column {
+    float: left;
+    width: 100%;
+}
+.column--right {
+    float: right;
+}
+.wrapper:after {
+    content: '.';
+    clear: both;
+    opacity: 0;
+}
+.mobile-4 {
+    width: 33.33%;
+}
+.mobile-6 {
+    width: 50%;
+}
+@media screen and (min-width: 470px) {
+    .tablet-2 {
+        width: 16.66%;
+    }
+    .tablet-4 {
+        width: 33.33%;
+    }
+    .tablet-8 {
+        width: 66.66%;
+    }
+    .tablet-10 {
+        width: 83.33%;
+    }
+    .tablet-12 {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .desktop-2 {
+        width: 16.66%;
+    }
+    .desktop-3 {
+        width: 25%;
+    }
+    .desktop-4 {
+        width: 33.33%;
+    }
+    .desktop-7 {
+        width: 58.33%;
+    }
+    .desktop-8 {
+        width: 66.66%;
+    }
+    .desktop-10 {
+        width: 83.33%;
+    }
+    .desktop-12 {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .desktop-wide-1 {
+        width: 8.33%;
+    }
+    .desktop-wide-1-5 {
+        width: 12.5%;
+    }
+    .desktop-wide-2 {
+        width: 16.66%;
+    }
+    .desktop-wide-2-5 {
+        width: 20.83%;
+    }
+    .desktop-wide-3 {
+        width: 25%;
+    }
+    .desktop-wide-4 {
+        width: 33.33%;
+    }
+    .desktop-wide-5 {
+        width: 41.66%;
+    }
+    .desktop-wide-6 {
+        width: 50%;
+    }
+    .desktop-wide-7 {
+        width: 58.33%;
+    }
+    .desktop-wide-8 {
+        width: 66.66%;
+    }
+    .desktop-wide-10 {
+        width: 83.33%;
+    }
+    .desktop-wide-12 {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .desktop-super-wide-2 {
+        width: 16.66%;
+    }
+    .desktop-super-wide-3 {
+        width: 25%;
+    }
+    .desktop-super-wide-4 {
+        width: 33.33%;
+    }
+    .desktop-super-wide-6 {
+        width: 50%;
+    }
+    .desktop-super-wide-7 {
+        width: 58.33%;
+    }
+    .desktop-super-wide-8 {
+        width: 66.66%;
+    }
+    .desktop-super-wide-10 {
+        width: 83.33%;
+    }
+    .desktop-super-wide-12 {
+        width: 100%;
+    }
+}
+
+
+/** Priority classes to hide content */
+.priority-1, .priority-2 {
+    display: none;
+}
+@media screen and (min-width: 470px) {
+    .priority-1 {
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .priority-2 {
+        display: block;
+    }
+}
+
+/** Layouts prefixed with l- */
+.l-footer {
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/** Blocks prefixed with b- */
+.b-header {
+    background: #ffd703;
+}
+
+.b-main, .b-sidebar, .b-header {
+    padding: 10px;
+}
+
+@media screen and (min-width: 470px) {
+    .b-main, .b-sidebar, .b-header {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .b-header {
+        padding-bottom: 10000px !important;
+        margin-bottom: -10000px;
+    }
+}
+
+.b-header {
+    padding: 10px 20px 0 20px;
+}
+
+.b-sidebar-second {
+    padding: 10px;
+    background: #efefef;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+}
+
+/** Components prefixed with c- */
+.c-logo {
+    font-family: Dancing Script;
+}
+
+.c-booking {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    margin-top: 30px;
+}
+.c-booking__form {
+    height: 30px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.c-booking__form:hover {
+    height: 220px;
+    z-index: 10;
+    transition: 0.5s ease-in;
+}
+.c-booking__form form {
+    margin-top: 10px;
+}
+.c-booking__form div {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #FFF;
+}
+.c-booking__form .last {
+    margin-top: 5px;
+    border: none;
+}
+
+@media screen and (min-width: 470px) {
+    .c-booking {
+        width: 95%;
+        position: relative;
+        margin-top: 0;
+    }
+    .c-booking__form {
+        width: 300px;
+        background: #cccccc;
+        text-align: left;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px 10px;
+    }
+}
+
+.c-icon {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.c-photo-gallery {
+    width: 100%;
+}
+
+.c-events__item {
+    background: center center  no-repeat;
+    height: 300px;
+    overflow: hidden;
+    border-right: 10px solid #FFF;
+    position: relative;
+}
+.c-events__item img {
+    filter: grayscale(0.9) brightness(1.2);
+}
+.c-events__item:hover img {
+    filter: none;
+}
+.c-events__item:last-child {
+    border: none;
+}
+.c-events__item img {
+    max-height: 100%;
+    max-width: none;
+    margin-left: -200px;
+}
+.c-events__text {
+    color: #FFF;
+    position: absolute;
+    bottom: 25px;
+    font-size: 1.3em;
+    font-family: "Volkorn Bold";
+    z-index: 5;
+    left: 10px;
+    display: block;
+}
+
+@media screen and (min-width: 1400px) {
+    .c-advert:nth-child(1),
+    .c-advert:nth-child(3) {
+        padding-right: 5px;
+    }
+    .c-advert:nth-child(2),
+    .c-advert:nth-child(4) {
+        padding-left: 5px;
+    }
+
+}
+
+
+.c-image--top {
+    padding-bottom: 10px;
+}
+.c-image--left {
+    padding-right: 10px;
+}
+.c-image--right {
+    padding-left: 10px;
+}
+@media screen and (min-width: 480px) {
+    .c-image--left, .c-image--right {
+        padding: 0;
+    }
+}
+
+.c-menu {
+    color: #b4a035;
+    padding-bottom: 10px;
+}
+.c-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.c-sub-menu {
+    color: #b4b4b4;
+}
+.c-sub-menu ul {
+    list-style: none;
+    padding: 0 0 0 10px;
+}
+
+.c-check-in {
+    border: 1px solid #efefef;
+    padding: 0 10px 10px;
+}

@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+    font-size: 0.7em;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+h2 {
+    padding-bottom: 15px;
+}
+h4 {
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/** Layouts */
+.l-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 480px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.l-layout, .c-menu {
+    min-height: 480px;
+}
+
+.l-layout {
+    font-size: 2em;
+}
+
+.l-hero {
+    background: url('img/hero.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.l-hero__filter {
+    background: rgba(255, 255, 255, 0.6);
+}
+.l-hero h1 {
+    margin-top: 50px;
+    font-size: 1.3em;
+}
+.l-hero h2 {
+    font-size: 1.5em;
+}
+
+.l-brand {
+    background: url('img/brand.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-style: italic;
+}
+.l-brand .l-wrapper {
+    padding-top: 50px;
+}
+
+.l-trailer-concepts {
+    background: url('img/trailer.jpg') no-repeat;
+    background-size: cover;
+    color: #FFF;
+    text-align: center;
+}
+.l-trailer-concepts__filter {
+    background: rgba(0, 0, 0, 0.6);
+}
+.l-trailer-concepts .l-wrapper {
+    padding-top: 70px;
+}
+
+.l-efficiency {
+    background: url('img/efficiency.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.l-efficiency .l-wrapper {
+    padding-top: 100px;
+}
+.l-efficiency__filter {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.l-history {
+    background: url('img/history.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+}
+.l-history__filter {
+    background: rgba(0, 0, 0, 0.6);
+}
+.l-history .l-wrapper {
+    padding-top: 100px;
+}
+
+.l-footer {
+    background: #007ec6;
+    color: #FFF;
+    padding: 100px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+.l-footer .l-wrapper {
+    height: auto;
+    padding-bottom: 0px;
+}
+
+.map {
+    width: 100%;
+}
+
+/** Components */
+.c-logo {
+    padding-top: 10px;
+    text-align: center;
+    width: 80px;
+}
+
+.c-menu {
+    background: rgba(51, 153, 204, 0.9);
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 75px;
+    z-index: 1;
+    color: #FFF;
+}
+.c-menu li {
+    list-style: none;
+}
+.c-menu a {
+    font-size: 2em;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 300;
+}
+.c-menu a:hover {
+    text-decoration: underline;
+}
+
+.c-forms {
+    background: rgba(47, 134, 177, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    height: 50px;
+}
+
+.c-search {
+    float: left;
+}
+.c-search input {
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    padding-left: 10px;
+    width: 150px;
+}
+.c-search button {
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.c-login input {
+    background: none;
+    border: 3px solid #FFF;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 7px;
+    color: #FFF;
+}
+.c-login .c-button {
+    padding: 5px;
+    font-size: 14px;
+}
+.c-login h3 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.c-button {
+    font-size: 20px;
+    display: inline-block;
+    border: 3px solid #007ec6;
+    color:  #007ec6;
+    padding: 10px;
+    text-decoration: none;
+}
+.l-layout .c-button{
+    margin-top: 50px;
+}
+.c-button--white {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.c-social-media {
+    padding-bottom: 50px;
+}
+
+.c-newsletter {
+    padding-bottom: 50px;
+}
+.c-newsletter input {
+    color: #FFF;
+}
+/** Menu button */
+.c-menu-button {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    z-index: 10;
+}
+.line {
+    background: #000;
+    width: 30px;
+    height: 4px;
+    margin-top: 5px;
+}
+
+/** Menu active styles */
+.menu-active .c-menu {
+    display: block;
+}
+.menu-active .line:nth-child(3) {
+    display: none;
+}
+.menu-active .c-menu-button {
+    position: relative;
+}
+.menu-active .line {
+    background: #FFF;
+}
+.menu-active .line:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
+
+.menu-active .line:nth-child(2) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
